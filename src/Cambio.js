@@ -8,4 +8,10 @@ function Cambio(venta, efectivo) {
   }
 }
 
-export default Cambio;
+
+function Fraccionar(monto)
+{
+    return [1,1,1,1,1];
+}
+
+export default (Cambio,Fraccionar);

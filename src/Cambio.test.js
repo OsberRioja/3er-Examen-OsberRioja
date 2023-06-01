@@ -1,7 +1,7 @@
-import sumar from "./sumador.js";
+import Fraccionar from "./Cambio.js";
 
-describe("Sumar", () => {
-  it("deberia sumar dos numeros", () => {
-    expect(sumar(3, 2)).toEqual(5);
+describe("Fraccionar en monedas", () => {
+  it("deberia fraccionar solo en monedas de 1 bs", () => {
+    expect(Fraccionar(5)).toEqual([1,1,1,1,1]);
   });
 });
