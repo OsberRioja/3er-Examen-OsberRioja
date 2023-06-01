@@ -1,5 +1,11 @@
 function Cambio(venta, efectivo) {
-  return efectivo-venta;
+  if(venta!=null||efectivo!=null)
+  {
+    return efectivo-venta;
+  }
+  else{
+    return "";
+  }
 }
 
 export default Cambio;

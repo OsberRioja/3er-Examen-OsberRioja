@@ -11,7 +11,14 @@ form.addEventListener("submit", (event) => {
   const montoVenta = Number.parseInt(venta.value);
   const montoEfectivo = Number.parseInt(efectivo.value);
 
-  div.innerHTML = "<p>" + Cambio(montoVenta, montoEfectivo) + "</p>";
+  if (isNaN(montoVenta) || isNaN(montoEfectivo)) {
+    alert("Por favor, complete ambos campos.");
+    return; // Detener la ejecución si hay campos vacíos
+  }
+
+  const cambio = Cambio(montoVenta, montoEfectivo);
+
+  div.innerHTML = "<p>" + cambio + "</p>";
 
 
 });
