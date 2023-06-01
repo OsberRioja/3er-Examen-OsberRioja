@@ -12,8 +12,7 @@ describe("Obtener el monto de cambio a un cliente", () => {
     cy.get("#monto-efectivo").clear();
     cy.get("#cambio-button").click();
     cy.on("window:alert", (text) => {
-      expect(text).to.equal("Por favor, complete ambos campos.");
-    });
+      expect(text).to.equal("Por favor, complete ambos campos.");});
     cy.get("#resultado-div").should("contain", ""); // Verifica que el contenido del resultado-div esté vacío
   });
 });
