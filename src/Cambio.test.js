@@ -11,4 +11,7 @@ describe("Fraccionar en monedas", () => {
   it("deberia fraccionar en monedas de 1,2 y 5 bs", () => {
     expect(Fraccionar(13)).toEqual([5,5,2,1]);
   });
+  it("deberia fraccionar en monedas de 0.2,0.5,1,2,5 bs", () => {
+    expect(Fraccionar(19)).toEqual([5,5,5,2,2]);
+  });
 });
